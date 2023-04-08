@@ -1,3 +1,4 @@
-# JI-Portfolio.github.io <br>
+# JI-Portfolio.github.io <br/>
  
- ## Visit Portfolio:[a link](file:///C:/JI-Portfolio.github.io/startup.html)
+ ## Visit Portfolio
+ [Website] (file:///C:/JI-Portfolio.github.io/startup.html)
