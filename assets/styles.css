@@ -715,7 +715,6 @@ transition: .1s;
         height: 30vh;
       }
 
-
     .about{
     grid-template-columns: 1fr;
 }
@@ -735,6 +734,11 @@ s
 
 .portfolio-content {
     grid-template-columns: repeat(2,220px);
+}
+
+.contact-text p{
+    font-size: 14px;
+    padding-right:30px;
 }
 
 }
