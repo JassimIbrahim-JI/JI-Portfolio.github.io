@@ -119,3 +119,11 @@ onsubmit.addEventListener("submit",(e)=>{
 );
 
 });
+
+let menu=document.querySelector("#menu-ic");
+let navs=document.querySelector(".navlist");
+
+menu.onclick=()=>{
+ 
+  navs.classList.toggle("open");
+}
