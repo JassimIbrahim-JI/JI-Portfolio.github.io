@@ -694,7 +694,7 @@ transition: .1s;
       }
     
       section{
-        padding: 110px 2% 60px;
+        padding: 110px 4% 60px;
       }
     
       .copyright{
@@ -733,7 +733,7 @@ s
 
 
 .portfolio-content {
-    grid-template-columns: repeat(2,220px);
+    grid-template-columns: repeat(2,215px);
 }
 
 .contact-text p{
