@@ -657,7 +657,7 @@ transition: transform .5s ease;
 }
 
 
-@media screen and (max-width:1480px){
+@media (max-width:1480px){
    header{
     padding-right:20%;
     transition: .1s;
@@ -693,7 +693,7 @@ transition: transform .5s ease;
 }
 
 
-@media screen and(max-width:1100px) {
+@media (max-width:1100px) {
    
     :root{
 transition: .1s;
@@ -720,7 +720,7 @@ transition: .1s;
 }
  
 
-@media screen and(max-width:920px) {
+@media (max-width:920px) {
 .about{
     grid-template-columns: 1fr;
 }
@@ -732,10 +732,27 @@ transition: .1s;
     width: 100%;
 }
 
+.about-tx h2 {
+    text-align: center;
+    font-size: 27px;
+ }
+ .about-tx h4{
+    text-align: center;
+    margin: 10px 0 20px;
+ }
+
+ .btn {
+  width: 300px;
+  margin: 20px 100px;
+}
+
 .about-tx p {
-   padding-right: 80px;
+   text-align: center;
    font-size: 12px;
 }
 
+.portfolio-content {
+    grid-template-columns: repeat(2,220px);
+}
 
 }
