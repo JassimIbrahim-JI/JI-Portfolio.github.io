@@ -111,9 +111,7 @@ header.sticky{
  
 }
 
-.navlist a.active{
-    color: var(--main-color);
-}
+
 
 #menu-ic{
     font-size: 35px;
@@ -747,11 +745,30 @@ s
     }
 .navlist{
     position: absolute;
-    top: 100%;
+    top: -1000px;
     left: 0;
+    right: 0;
     display: flex;
+    text-align: left;
     flex-direction: column;
     background: var(--bg-color);
+    transition: all .45s ease;
+}
+
+.navlist a{
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all .45s ease;
+    color: var(--txt-color);
+}
+
+.navlist a:is(:hover, :focus){
+    color: var(--main-color);
+}
+
+.navlist.open{
+    top: 100%;
 }
 
 }
