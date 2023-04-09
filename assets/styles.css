@@ -74,11 +74,8 @@ header.sticky{
  
 }
 
-
-
-
-.navlist li{
-    display: inline-block;
+.navlist {
+    display: flex;
    
 }
 
@@ -657,42 +654,6 @@ transition: transform .5s ease;
 }
 
 
-@media (max-width:1480px){
-   header{
-    padding-right:20%;
-    transition: .1s;
-   }
-
-   header.sticky{
-    padding-right:20%;
-    transition: .1s;
-  }
-
-  section{
-    padding: 110px 3% 60px;
-  }
-
-  .copyright{
-    padding: 15px 3%;
-  }
-
-  .portfolio-content{
-    grid-template-columns: repeat(2,280px);
-    margin-top: 30px;
-   
-   }
-
-   .portfolio{
-    padding: 80px 2% 50px;
-   }
-
-  .row img{
-    height: 30vh;
-  }
-
-}
-
-
 @media (max-width:1100px) {
    
     :root{
@@ -720,8 +681,44 @@ transition: .1s;
 }
  
 
-@media (max-width:920px) {
-.about{
+@media (max-width:977px) {
+
+
+    header{
+
+        padding: 16px;
+        transition: .1s;
+       }
+    
+       header.sticky{
+        padding-right:16px;
+        transition: .1s;
+      }
+    
+      section{
+        padding: 110px 2% 60px;
+      }
+    
+      .copyright{
+        padding: 15px 3%;
+      }
+    
+      .portfolio-content{
+        grid-template-columns: repeat(2,280px);
+        margin-top: 30px;
+       
+       }
+    
+       .portfolio{
+        padding: 80px 2% 50px;
+       }
+    
+      .row img{
+        height: 30vh;
+      }
+
+
+    .about{
     grid-template-columns: 1fr;
 }
 .about-img{
@@ -730,29 +727,31 @@ transition: .1s;
 }
 .about-img img{
     width: 100%;
+    max-width: 100%;
 }
-
-.about-tx h2 {
-    text-align: center;
-    font-size: 27px;
- }
- .about-tx h4{
-    text-align: center;
-    margin: 10px 0 20px;
+s
+ .contact{
+    grid-template-columns: 1fr;
  }
 
- .btn {
-  width: 300px;
-  margin: 20px 100px;
-}
-
-.about-tx p {
-   text-align: center;
-   font-size: 12px;
-}
 
 .portfolio-content {
     grid-template-columns: repeat(2,220px);
+}
+
+}
+
+@media(max-width:840px){
+    #menu-ic{
+        display: block;
+    }
+.navlist{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
 }
 
 }
