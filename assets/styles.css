@@ -715,7 +715,6 @@ transition: .1s;
         height: 30vh;
       }
 
-
     .about{
     grid-template-columns: 1fr;
 }
@@ -737,6 +736,11 @@ s
     grid-template-columns: repeat(2,220px);
 }
 
+.contact-text p{
+    font-size: 14px;
+    padding-right:30px;
+}
+
 }
 
 @media(max-width:477px){
@@ -756,10 +760,10 @@ s
     }
     
     
-    
     #menu-ic{
         display: block;
     }
+    
 .navlist{
     position: absolute;
     top: -1000px;
@@ -786,6 +790,13 @@ s
 
 .navlist.open{
     top: 100%;
+}
+
+.contact-text p{
+    font-size: 12px;
+    padding-right:20px;
+    line-height: 1.4;
+
 }
 
 }
