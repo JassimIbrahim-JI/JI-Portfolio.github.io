@@ -88,6 +88,24 @@ header.sticky{
     transition: all .5s;
 }
 
+ li a:is(:link, :visited, :active){
+     color: white;
+     text-decoration: none;
+     padding: .5rem 1.5rem;
+     background: transparent;
+   
+}
+
+ li a:is(:link, :visited, :active).active::after{
+   width: 100%;
+   transition: width .5s ;
+}
+
+
+li a:is(:link, :visited, :active).active{
+   color: #125a32;
+ }
+ 
 
 .navlist a::after{
     content: '';

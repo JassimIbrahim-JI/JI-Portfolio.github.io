@@ -120,10 +120,32 @@ onsubmit.addEventListener("submit",(e)=>{
 
 });
 
+
 let menu=document.querySelector("#menu-ic");
 let navs=document.querySelector(".navlist");
 
+
 menu.onclick=()=>{
- 
-  navs.classList.toggle("open");
+   navs.classList.toggle("open");
 }
+
+// const activePage=window.location.pathname;
+// const navLinks=document.querySelectorAll('nav a').forEach(link=>{
+
+// if(link.href.includes( `${activePage}`)){
+//   console.log(`Selected Page: ${activePage}`);
+//   link.classList.add('active');
+// }
+
+// });
+
+window.navItems = function(event) {
+  var elms = document.querySelectorAll('ul li a');
+  // reset all you menu items
+  for (var i = 0, len = elms.length; i < len; i++) {
+    elms[i].classList.remove('active');
+  }
+  // mark as active clicked menu item
+  event.target.classList.add("active");
+};
+
