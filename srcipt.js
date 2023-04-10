@@ -123,11 +123,22 @@ onsubmit.addEventListener("submit",(e)=>{
 
 let menu=document.querySelector("#menu-ic");
 let navs=document.querySelector(".navlist");
+window.menuFunc=function(el){
+ menu.onclick=()=>{
+  el.querySelector('ion-icon').setAttribute('name','layers-outline');
+  
+    navs.classList.toggle('open');
+    if(navs.classList.contains('open')){
+      el.querySelector('ion-icon').setAttribute('name','close-outline');   
+    }
+ }
 
-
-menu.onclick=()=>{
-   navs.classList.toggle("open");
 }
+
+// menu.onclick=()=>{
+//   menu.setAttribute('name','close-outline');
+//    navs.classList.toggle("open");
+// }
 
 // const activePage=window.location.pathname;
 // const navLinks=document.querySelectorAll('nav a').forEach(link=>{

@@ -805,6 +805,13 @@ s
 .navlist a:is(:hover, :focus){
     color: var(--main-color);
 }
+.navlist li a:is(:hover,:focus)::after{
+    width: 40%;
+}
+li a:is(:link, :visited, :active).active::after{
+    width: 40%;
+ }
+
 
 .navlist.open{
     top: 100%;
