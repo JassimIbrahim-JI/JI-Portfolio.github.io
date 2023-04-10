@@ -758,6 +758,11 @@ s
     padding-right:30px;
 }
 
+.navlist a {
+    margin: 0 10px 20px;
+    font-size: 15px;
+}
+
 }
 
 @media(max-width:477px){
