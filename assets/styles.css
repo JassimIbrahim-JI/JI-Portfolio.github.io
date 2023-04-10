@@ -91,7 +91,6 @@ header.sticky{
  li a:is(:link, :visited, :active){
      color: white;
      text-decoration: none;
-     padding: .5rem 1.5rem;
      background: transparent;
    
 }
