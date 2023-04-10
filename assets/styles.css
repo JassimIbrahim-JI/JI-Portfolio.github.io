@@ -781,6 +781,19 @@ s
         grid-template-columns: repeat(2,170px);
     }
     
+    .layer h4{
+        font-size: 14px;
+        margin-bottom: 8px;
+    
+    }
+    
+    .layer p{
+        margin-bottom: 12px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+    
     
     #menu-ic{
         display: block;
