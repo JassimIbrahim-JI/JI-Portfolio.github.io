@@ -851,5 +851,8 @@ li a:is(:link, :visited, :active).active::after{
    
 }
 
+.contact-form .submit {
+    height: 6vh;
+}
 
 }
