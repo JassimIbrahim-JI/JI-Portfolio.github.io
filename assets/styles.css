@@ -29,6 +29,9 @@
 body{
     background-color: var(--bg-color);
     color: var(--txt-color);
+    margin:0px;
+    padding:0px;
+    width:100%;
 }
 
 header{
@@ -710,10 +713,12 @@ transition: .1s;
         transition: .1s;
       }
     
-      section{
-        padding: 110px 4% 60px;
-      }
+      .portfolio {
+        height: 100vh;
     
+    }
+
+
       .copyright{
         padding: 15px 3%;
       }
@@ -749,9 +754,6 @@ s
  }
 
 
-.portfolio-content {
-    grid-template-columns: repeat(2,215px);
-}
 
 .contact-text p{
     font-size: 14px;
@@ -768,32 +770,34 @@ s
 @media(max-width:477px){
     
     header{
-        padding: 10px 7vh 0 20px;
+    
+        padding: 6% 14% 6px;
         transition: .1s ;
     }
 
     header.sticky{
-        padding: 10px 7vh 0 20px;
+        padding: 6% 14% 6px;
         transition: .1s;
       }
 
       .portfolio-content {
         grid-template-columns: repeat(2,170px);
+        grid-template-rows: 210px 210px;
+
     }
     
     .layer h4{
-        font-size: 14px;
-        margin-bottom: 8px;
+        font-size: 13px;
+        margin-bottom: 5px;
     
     }
     
     .layer p{
-        margin-bottom: 10px;
-        font-size: 13px;
+        margin-bottom: 3px;
+        font-size: 12px;
         font-weight: 500;
         line-height: 1.1;
     }
-    
     
     #menu-ic{
         display: block;
@@ -840,5 +844,12 @@ li a:is(:link, :visited, :active).active::after{
     line-height: 1.4;
 
 }
+
+.contact-form form input, form textarea {
+    width: 80%;
+    margin-bottom: 10px;
+   
+}
+
 
 }
